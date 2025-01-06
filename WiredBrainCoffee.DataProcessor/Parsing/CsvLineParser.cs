@@ -38,8 +38,8 @@ namespace WiredBrainCoffee.DataProcessor.Parsing
                 }
                 catch(Exception ex)
                 {
-                    //throw new Exception($"Invlid line datetime: {csvLine}");
-                    throw new Exception($"Invlid line: {csvLine}");
+                    throw new Exception($"Invlid line datetime: {csvLine}");
+                    //throw new Exception($"Invlid line: {csvLine}");
                 }
             }
             return new MachineDataItem(lineItems[0], DateTime.Parse(lineItems[1], CultureInfo.InvariantCulture));
